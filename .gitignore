@@ -1,0 +1,21 @@
+# General
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Environments
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Node/Python common
+node_modules/
+venv/
+.env/
+
+# VS Code
+.vscode/

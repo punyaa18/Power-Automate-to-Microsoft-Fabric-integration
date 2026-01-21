@@ -1,0 +1,10 @@
+{
+  "EventName": "UserSubmitted",
+  "Timestamp": "2025-07-02T10:00:00Z",
+  "Payload": {
+    "Name": "Contoso User"
+  },
+  "Source": "PowerAutomateFlow",
+  "Workspace": "<YourFabricWorkspaceName>",
+  "Notes": "Sample structure for the 'Send Event' action content body. Adjust fields to match your Lakehouse table schema."
+}
