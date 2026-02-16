@@ -8,6 +8,9 @@ This guide shows how to send events from Power Automate to Microsoft Fabric usin
 - Power Automate posts events via the **Send Event** connector
 - Microsoft Fabric **Eventstream** ingests those events
 - Events are written to a **Lakehouse** table (Delta format)
+## Prerequisites
+- Access to https://app.fabric.microsoft.com and permission to create a **Workspace**, **Lakehouse**, and **Eventstream**
+- Power Automate with access to the **Send Event** trigger/connector
 
 ### Workflow Flowchart
 ```mermaid
@@ -32,10 +35,6 @@ flowchart LR
   B3 --> D1[Power BI / analytics]
 ```
 
-## Prerequisites
-- Access to https://app.fabric.microsoft.com and permission to create a **Workspace**, **Lakehouse**, and **Eventstream**
-- Power Automate with access to the **Send Event** trigger/connector
-- Fabric credentials to retrieve **Event Hub Name** and **Primary Connection String** (SAS)
 
 ## Step-by-Step
 
