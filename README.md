@@ -93,10 +93,3 @@ flowchart LR
 - **No rows in Lakehouse**: Verify the table exists and the Eventstream destination points to the correct Workspace and Lakehouse.
 - **Schema mismatch**: Ensure the payload keys (e.g., `Name`) match the columns in the Delta table.
 
-## Repository Contents
-- `README.md` — This guide
-- `examples/power-automate/send-event.json` — Sample event payload for Send Event
-- `assets/` — Add screenshots here as you configure (placeholders)
-
-## Notes
-This README paraphrases and closely follows the original blog authored by Punyaa Dixit on July 2, 2025, focusing on the essential steps and tips to replicate the setup.
