@@ -12,10 +12,24 @@ This guide shows how to send events from Power Automate to Microsoft Fabric usin
 ### Workflow Flowchart
 ```mermaid
 flowchart LR
-  A[Power Automate Flow] --> B[Send Event action]
-  B --> C[Microsoft Fabric Eventstream]
-  C --> D[Lakehouse Delta table]
-  D --> E[Analytics and dashboards]
+  subgraph PA[Power Automate]
+    A1[Trigger or form input] --> A2[Build JSON payload]
+    A2 --> A3[Send Event action]
+  end
+
+  subgraph FAB[Microsoft Fabric]
+    B1[Eventstream Custom Endpoint]
+    B2[Destination: Lakehouse]
+    B3[Delta table]
+  end
+
+  A3 --> B1
+  B1 --> B2 --> B3
+
+  C1[Event Hub Name + SAS] -. configure .-> A3
+  C1 -. authenticate .-> B1
+
+  B3 --> D1[Power BI / analytics]
 ```
 
 ## Prerequisites
