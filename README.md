@@ -21,7 +21,7 @@ flowchart LR
   end
 
   subgraph FAB[Microsoft Fabric]
-    B1[Eventstream\nCustom Endpoint]
+    B1[Custom Endpoint]
     B2[Destination: Lakehouse]
     B3[Delta table]
   end
